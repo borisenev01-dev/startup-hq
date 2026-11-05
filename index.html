@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup HQ — Planning Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <aside id="sidebar">
+    <div class="brand">
+      <div class="logo">S</div>
+      <div><div class="brand-name">Startup HQ</div><div class="brand-sub">Planning platform</div></div>
+    </div>
+    <nav id="nav"></nav>
+    <div id="account"></div>
+    <div class="side-actions">
+      <button id="export" title="Download progress as a file to share with the team">⇩ Export</button>
+      <button id="import" title="Load a progress file">⇧ Import</button>
+      <button id="reset" class="danger" title="Clear all progress">Reset</button>
+      <input type="file" id="import-file" accept=".json" hidden>
+    </div>
+  </aside>
+  <button id="menu" aria-label="Menu">☰</button>
+  <main id="main"></main>
+
+  <script src="config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="data.js"></script>
+  <script src="store.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
